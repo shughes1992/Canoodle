@@ -4,18 +4,19 @@ var app = express();
 
 var port = process.env.PORT||3000;
 
-var data = ['cat', 'dog', 'iguana']
 
-app.get("/", function(req, res){
-    res.send("app is workin")
-})
+var apiroutes = require("./app/routing/apiroutes");
 
-app.get("/apple", function(req, res){
-    res.send(data)
-})
+var htmlroutes = require("./app/routing/htmlroutes")
+
+app.use("/", apiroutes);
+
+app.use("/", htmlroutes);
+
+
 
 app.listen(port, function(){
-    console.log("App is listening :)")
+    console.log("App is not listening! :)")
 });
 
-//above is starting the server BASIC
+//above is starting the server BASIC !
