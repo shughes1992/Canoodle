@@ -2,6 +2,8 @@ var express = require("express")
 
 var app = express();
 
+var port = process.env.PORT||3000;
+
 var data = ['cat', 'dog', 'iguana']
 
 app.get("/", function(req, res){
@@ -12,7 +14,7 @@ app.get("/apple", function(req, res){
     res.send(data)
 })
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log("App is listening :)")
 });
 
