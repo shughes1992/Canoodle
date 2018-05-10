@@ -14,5 +14,14 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "path": "^0.12.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shughes1992/Canoodle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shughes1992/Canoodle/issues"
+  },
+  "homepage": "https://github.com/shughes1992/Canoodle#readme"
 }
