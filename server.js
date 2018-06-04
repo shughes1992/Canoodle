@@ -16,7 +16,7 @@ app.use("/", htmlroutes);
 
 
 app.listen(port, function(){
-    console.log("App is not listening! :)")
+    console.log("App is listening! :)")
 });
 
 //above is starting the server BASIC !
